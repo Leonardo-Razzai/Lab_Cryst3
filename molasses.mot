@@ -1,0 +1,37 @@
+LOOP
+
+INIT                                                                                        
+Trigger = Off                                                                               (0)
+Trigger CCD = Off                                                                           (1)
+MOT B Field = Off                                                                           (14)
+Coils X Current = 0.0 A                                                                     (20)
+Coils Y Current = 0.0 A                                                                     (21)
+Coils Z Current = 0.0 A                                                                     (22)
+Ref Rep Freq = 10000000.0 Hz                                                                (30)
+Ref Cool Freq = 10000000.0 Hz                                                               (32)
+ENDINIT                                                                                     
+
+INNER
++1us                           Ref Cool Freq = 10000000.0 Hz                                (32)
++1us                           AOM MOT Amp = [700]                                          (41)
++1s                            MOT B Field = On                                             (14)
++5.0s                          MOT B Field = Off                                            (14)
++1us                           AOM MOT Amp = [0]                                            (41)
++1.5ms                         Coils X Current = 0.00 A                                     (20)
++1us                           Coils Y Current = 0.50 A                                     (21)
++1us                           Coils Z Current = 0.00 A                                     (22)
++0.5ms                         Ref Cool Freq = 10103333.3 Hz                                (32)
++1us                           AOM MOT Amp = [700]                                          (41)
++10.0ms                        AOM MOT Amp = [0]                                            (41)
++100us                         Ref Cool Freq = 9886000.0 Hz                                 (32)
++1.0ms                         Trigger CCD = On                                             (1)
++1us                           AOM MOT Amp = [700]                                          (41)
++1ms                           AOM MOT Amp = [0]                                            (41)
++5ms                           Trigger CCD = Off                                            (1)
++1us                           AOM MOT Amp = [700]                                          (41)
++20ms                          Ref Cool Freq = 10000000.0 Hz                                (32)
+ENDINNER
+
+ITERATIONS 1
+
+ENDLOOP

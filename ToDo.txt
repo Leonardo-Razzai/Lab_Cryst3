@@ -1,0 +1,3 @@
+When a .mot script is generated:
+- check that each channel name present in the .mot is also present in config.toml
+- check that each channel name is associated to the same address as specified in config.toml

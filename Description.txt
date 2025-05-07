@@ -1,0 +1,10 @@
+This folder is supposed to contain:
+- script for routines (for loops where some params are changed)
+- .mot files
+
+A routine is composed of:
+1) generate file.mot with the proper params
+2) set oscilloscope and ccd
+3) run the .mot file usign subprocess
+4) get data from oscillscope and ccd
+5) Salvare i dati
